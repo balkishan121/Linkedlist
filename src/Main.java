@@ -1,5 +1,5 @@
     public class Main {
-        private static Node ArrtoLl(int []arr)
+        public static Node ArrtoLl(int []arr)
         {
             Node head=new Node (arr[0]);
             Node mover = head;
@@ -10,7 +10,7 @@
             }
             return head;
         }
-        private static void printLl(Node head)
+        public static void printLl(Node head)
         {
             Node temp=head;
             while(temp!=null)
@@ -19,7 +19,7 @@
                 temp=temp.next;
             }
         }
-        private static int lenghtOfLl(Node head)
+        public static int lenghtOfLl(Node head)
         {
             int count =0;
             Node temp=head;
@@ -31,7 +31,7 @@
 
             return count;
         }
-        private static boolean checkElement(Node head, int val)
+        public static boolean checkElement(Node head, int val)
         {
             Node temp=head;
             while(temp!=null) {
